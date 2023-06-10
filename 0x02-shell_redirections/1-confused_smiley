@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "\xE2\x98\x95"
+echo -e "\u1F615"
