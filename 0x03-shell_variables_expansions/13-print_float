@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $NUM="$NUM.00"
+printf '%x\n' $DECIMAL
