@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# configures an Ubuntu server
+sudo cp /etc/hosts ~/hosts.new
+sudo sed -i 's/127.0.0.1[[:space:]]localhost/127.0.0.2 localhost/' ~/hosts.new
+sudo sed -i '/facebook.com/s/$/ 8.8.8.8/' ~/hosts.new
+sudo cp -f ~/hosts.new /etc/hosts
+echo "Configuration completed. Check the results with 'ping localhost' and 'ping facebook.com'"
